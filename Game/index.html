@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Galatic miner</title>
+    <meta name="description" content="A fun mining tycoon game based on running a mining empire. ">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/mysty.css">
+    <link rel="stylesheet" href="jq.js">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+           
+            <div class="four columns">
+                <h4 id="HUDCash">Credits:</h4>
+            </div>
+            <div class="two columns">
+                <h6 id="comt">Comtainium:</h6>
+            </div>
+            <div class="two columns">
+                <h6 id="avra">Avrarium:</h6>
+            </div>
+            <div class="two columns">
+                <h6 id="rart">Rartainia:</h6>
+            </div>
+            <div class="two columns">
+                <h6 id="exot">Exot Crystals:</h6>
+            </div>
+
+        </div>
+       
+           <div class="row container">
+        <div class="three columns"><button id="1">x1</button></div>
+        <div class="three columns"><button id="10">x10</button></div>
+        <div class="three columns"><button id="50">x50</button></div>
+        <div class="three columns"><button id="100">x100</button></div>
+            
+    </div>
+        <div id="mainarea" class="row">
+            <div class="four columns ">
+                <h4>D100</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="">Cost</td>
+                            <td id="hudd100Cost">26</td>
+                            <td>Owned</td>
+                            <td id="hudd100Owned">42</td>
+                        </tr>
+                        <tr>
+                            <td>Reliablity</td>
+                            <td id="hudd100Rel">42</td>
+                            <td>Avail</td>
+                            <td id="hud">42</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                <table class="u-full-width">
+                    <tbody>
+                        <tr>
+                            <td>Chr</td>
+                            <td>Com</td>
+                            <td>Rart</td>
+                            <td>Exot</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="d100" onclick="onClicked(this.id)">-</button>
+            </div>
+            <div class="four columns ">
+                <h4>D250</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="">Cost</td>
+                            <td id="hudd250Cost">26</td>
+                            <td>Owned</td>
+                            <td id="hudd250Owned">42</td>
+                        </tr>
+                        <tr>
+                            <td>Reliablity</td>
+                            <td id="hudd250Rel">42</td>
+                            <td>Avail</td>
+                            <td id="hud">42</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                <table class="u-full-width">
+                    <tbody>
+                        <tr>
+                            <td>Chr</td>
+                            <td>Com</td>
+                            <td>Rart</td>
+                            <td>Exot</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="d250" onclick="onClicked(this.id)">-</button>
+            </div>
+            <div class="four columns ">
+                <h4>D400</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="">Cost</td>
+                            <td id="hudd400Cost">26</td>
+                            <td>Owned</td>
+                            <td id="hudd400Owned">42</td>
+                        </tr>
+                        <tr>
+                            <td>Reliablity</td>
+                            <td id="hudd400Rel">42</td>
+                            <td>Avail</td>
+                            <td id="hud">42</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                <table class="u-full-width">
+                    <tbody>
+                        <tr>
+                            <td>Chr</td>
+                            <td>Com</td>
+                            <td>Rart</td>
+                            <td>Exot</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="d400" onclick="onClicked(this.id)">-</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="four columns ">
+                    <h4>M120</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td id="">Cost</td>
+                                <td id="hudm120Cost">26</td>
+                                <td>Owned</td>
+                                <td id="hudm120Owned">42</td>
+                            </tr>
+                            <tr>
+                                <td>Reliablity</td>
+                                <td id="hudm120Rel">42</td>
+                                <td>Avail</td>
+                                <td id="hudm120">42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                    <table class="u-full-width">
+                        <tbody>
+                            <tr>
+                                <td>Chr</td>
+                                <td>Com</td>
+                                <td>Rart</td>
+                                <td>Exot</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="m120" onclick="onClicked(this.id)">-</button>
+                </div>
+                <div class="four columns ">
+                    <h4>M750</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td id="">Cost</td>
+                                <td id="hudm750Cost">26</td>
+                                <td>Owned</td>
+                                <td id="hudm750Owned">42</td>
+                            </tr>
+                            <tr>
+                                <td>Reliablity</td>
+                                <td id="hudm750Rel">42</td>
+                                <td>Avail</td>
+                                <td id="hud">42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                    <table class="u-full-width">
+                        <tbody>
+                            <tr>
+                                <td>Chr</td>
+                                <td>Com</td>
+                                <td>Rart</td>
+                                <td>Exot</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="m750" onclick="onClicked(this.id)">-</button>
+                </div>
+                <div class="four columns ">
+                    <h4>M900</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td id="">Cost</td>
+                                <td id="hudm900Cost">26</td>
+                                <td>Owned</td>
+                                <td id="hudm900Owned">42</td>
+                            </tr>
+                            <tr>
+                                <td>Reliablity</td>
+                                <td id="hudm900Rel">42</td>
+                                <td>Avail</td>
+                                <td id="hudm750">42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Little slow mining Drone, cheap and reliable for the price.</p>
+                    <table class="u-full-width">
+                        <tbody>
+                            <tr>
+                                <td>Chr</td>
+                                <td>Com</td>
+                                <td>Rart</td>
+                                <td>Exot</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="m900" onclick="onClicked(this.id)">-</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="marketplace" class="row">
+            <h4>Marketplace</h4>
+            <p>Click to show</p>
+        
+        </div>
+        <div id="marketplacedisplay" class="row">
+            
+             <div class="container trade">
+
+            <div class="three columns">
+                <h6 id="">Comtainium</h6>
+                <button id="Comtainium" class="button-primary" onclick="tradeclick(this.id)">Price</button>
+            </div>
+            <div class="three columns">
+                <h6 id="">Avrarium</h6>
+                <button id="Avrarium" class="button-primary" onclick="tradeclick(this.id)">Price</button>
+            </div>
+            <div class="three columns">
+                <h6 id="orenameRar">Rartainia</h6>
+                <button id="Rartainia" class="button-primary" onclick="tradeclick(this.id)">Price</button>
+            </div>
+            <div class="three columns">
+                <h6 id="">Exot Crystals</h6>
+                <button id="ExotCrystals" class="button-primary" onclick="tradeclick(this.id)">Price</button>
+            </div>
+
+        </div>
+            
+
+   
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="my.js"></script>
+</body>
+
+</html>
